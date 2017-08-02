@@ -28,12 +28,10 @@ variable "ami" {
 
 variable "aws_key_pair" {
   description = "Required aws key pair"
-  default     = "thom"
 }
 
 variable "private_ssh_key_path" {
   description = "SSH Key"
-  default     = "/Users/thom/.ssh/ec2_us_west_2"
 }
 
 variable "chef-server-version" {
