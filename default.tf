@@ -122,8 +122,7 @@ module "tf_chef_server" {
   ssh_user             = "ubuntu"
   chef_server_version  = "${var.chef-server-version}"
 
-  chef_server_addons = "opscode-push-jobs-server"
-  chef_server_addvers = "2.2.2"
+  chef_server_addons = { "opscode-push-jobs-server" = "2.2.2" }
 
   chef_server_user           = "${var.chef-server-user}"
   chef_server_user_full_name = "${var.chef-server-user-full-name}"
